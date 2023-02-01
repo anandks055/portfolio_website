@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body style="background-color:#F1F6F5;">
+    <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="home">Anand K S</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Projects</a>
+              </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Full Stack</a></li>
+                </ul>
+             
+            </ul>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link active d-flex justify-content-end" aria-current="page" href="contact">Contact</a>
+        </li>
+           
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container" style="text-align: center; padding-top: 5%;">
+        <h2 style="padding-top: 2%; color:#DBA39A">Projects Completed:</h2>
+        <br>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1) ML for Private Travel Agents.
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                As per the AI Service Ideation task as part of an Internship at Feynn Labs, I had to come up with a business idea where Machine Learning and Data Science will be applied in small or medium businesses and help them with their sales, business operations, marketing etc. and prepare a report on the abstract prototype/business model. I hope to have achieved this in my project.
+                I came up with this Idea having found out that though there are numerous Tour planning services out there, there hasn't previously been a constant effort to aid private Travel agents through a common software platform to help their profession, which is still sought out for, because of the tailor-made experience they manage to provide.
+                I hope this project, when implemented, helps to create such a common platform to work on for all private Travel agents.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2) ML Classification model to predict salaries.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Create a classification model to predict whether a person makes over $50k a year Project Description: Problem statement: Create a classification model to predict whether a person makes over $50k a year Context: This data was extracted from the 1994 Census bureau database by Ronny Kohavi and Barry Becker (Data Mining and Visualization, Silicon Graphics). Dataset : https://drive.google.com/file/d/1keoZsPXTLq6Qjt7JoGECBmrykSgjhHTD/view?usp=sharing Details of features: The columns are described as follows: • Age • Workclass • Fnlwgt • Education • education_num • marital_status • occupation • relationship • race • sex • capital_gain • capital_loss • hours_per_week • native_country • income
+
+                Steps to consider: 1)Rename the columns. 2)Remove handle null values (if any). 3)Split data into training and test data. 4)Apply the following models on the training dataset and generate the predicted value for the test dataset a) Gaussian Naive Bayes Classifier b) Decision Tree c) Random Forest Classifier d) Logistic Regression e) KNN Classifier 5)Predict the income for test data 6)Compute Confusion matrix and classification report for each of these models.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3) ML Clustering model on credit cards to
+                categorize the dataset into appropriate cluster.
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Create a clustering model to credit card categorize the dataset into appropriate cluster. Problem statement: Create a clustering model to credit card categorize the dataset into appropriate cluster. Context: This case requires to develop a customer segmentation to define marketing strategy. The sample Dataset summarizes the usage behavior of about 9000 active credit card holders during the last 6 months. The file is at a customer level with 18 behavioral variables. Column Description: • CUSTID : Identification of Credit Card holder (Categorical) • BALANCE : Balance amount left in their account to make purchases • BALANCEFREQUENCY : How frequently the Balance is updated, score between 0 and 1 (1 = frequently updated, 0 = not frequently updated) • PURCHASES : Amount of purchases made from account • ONEOFFPURCHASES : Maximum purchase amount done in one-go • INSTALLMENTSPURCHASES : Amount of purchase done in installment • CASHADVANCE : Cash in advance given by the user • PURCHASESFREQUENCY : How frequently the Purchases are being made, score between 0 and 1 (1 = frequently purchased, 0 = not frequently purchased) • ONEOFFPURCHASESFREQUENCY : How frequently Purchases are happening in one-go (1 = frequently purchased, 0 = not frequently purchased) • PURCHASESINSTALLMENTSFREQUENCY : How frequently purchases in installments are being done (1 = frequently done, 0 = not frequently done)
+
+                • CASHADVANCEFREQUENCY : How frequently the cash in advance being paid • CASHADVANCETRX : Number of Transactions made with "Cash in Advanced" • PURCHASESTRX : Number of purchase transactions made • CREDITLIMIT : Limit of Credit Card for user • PAYMENTS : Amount of Payment done by user • MINIMUM_PAYMENTS : Minimum amount of payments made by user • PRCFULLPAYMENT : Percent of full payment paid by user • TENURE : Tenure of credit card service for user Dataset: https://drive.google.com/file/d/1mvgTrMIolqdrqvF6yxjNyUVpeFziehQ3/view?usp=sharing Steps to consider: Read the dataset Remove/handle null values if any Perform feature engineering steps (if required) Standardize the data Apply PCA to reduce the number of features Apply K-Means clustering to categorize the dataset
+            </div>
+          </div>
+          
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                4) Personalised website using HTML and CSS-3 and Django.
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  The current website is one of my projects on full stack involving a use of technologies like CSS, Bootstrap, html and the use use of Django with sql for the backend implementation.
+              </div>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+    <div class="container" style="text-align: center; padding-top: 2%; padding-bottom: 5%;">
+        <h2 style="padding-top: 2%; color:#DBA39A; padding-bottom: 2%;">Certified courses:</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                1) Machine Learning - Stanford University ( Coursera )
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              A course on Machine Learning certified by the Prestigious Stanford university, instructed by Prof. Andrew NG.
+              Certificate and other course details are available on my Linkedin profile.(Links found below.)
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                2) Beginning C++ Programming - From Beginner to Beyond (Udemy)
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              Details about course content, Instructor, Certificates and other details are available on my Linkedin profile.(Links found below.)
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                3) Course on Machine Learning (Smartknower)
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+                Details about course content, Instructor, Certificates and other details are available on my Linkedin profile.(Links found below.)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-social-icon btn-linkedin" style="text-align: center; display:block;" href="https://www.linkedin.com/in/anand-k-s-204981220/">
+        <span class="fa fa-linkedin"></span>
+        <a class="btn btn-social-icon btn-github" style="text-align: center; display:block;" href="https://github.com/anandks055">
+            <span class="fa fa-github"></span>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

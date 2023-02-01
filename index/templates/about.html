@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body style="background-color:#F1F6F5;">
+    <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="home">Anand K S</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="project">Projects</a>
+              </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Full Stack</a></li>
+                </ul>
+             
+            </ul>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a class="nav-link active d-flex justify-content-end" aria-current="page" href="contact">Contact</a>
+        </li>
+           
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container my-0">
+        <h2 style="padding-top: 2%; color:#DBA39A">Education</h2>
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin-left:2%;
+                    margin-top: 2%">
+                        <img src="{% static '12.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Senior Secondary (XII), Science
+                            Gopalaswamy PU College
+                            (KARNATAKA STATE BOARD )
+                            Year of completion: 2020
+                            <br>
+                            PERCENTAGE: 91.20%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem; margin-left:2%;
+                        margin-top: 2%">
+                            <img src="{% static 'cs.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">B.E, Information Science and
+                                Engineering
+                                JSS Science and Technology
+                                University, Mysuru.
+                                2020 - 2024
+                                <br>
+                                CGPA: 9.27/10</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem; margin-left:2%;
+                            margin-top: 2%">
+                                <img src="{% static 'school.jpg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text"><br> Senior Secondary (X), <br> KENDRIYA VIDYALAYA MYSORE (CBSE) <br> Year of completion: 2018
+                                    <br>
+                                    PERCENTAGE: 91.50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+      
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="container my-0">
+        <h2 style="padding-top: 2%; color:#DBA39A">Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin-left:2%;
+                    margin-top: 2%">
+                        <ul>
+                            <li>C++ Programming <br>
+                                Advanced</li>
+                            <li>Python <br>Intermediate</li>
+                            <li>C <br>Intermediate</li>
+                        </ul>
+                        <img src="{% static 'cpppy.jpg' %}" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin-left:2%;
+                    margin-top: 2%">
+                        <ul>
+                            <li>Machine Learning, DataScience <br>
+                            Intermediate</li>
+                            <li>Linux <br>Intermediate</li>
+                            <li>Django <br>Intermediate</li>
+                        </ul>
+                        <img src="{% static 'dataa.jpg' %}" class="card-img-top" alt="...">
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin-left:2%;
+                    margin-top: 2%">
+                        <ul>
+                            <li>Data Structures and Algorithms <br>
+                            Intermediate-Advanced</li>
+                            <li>HTML,CSS <br>Intermediate</li>
+                            <li>Javascript <br>Basic</li>
+                        </ul>
+                        <img src="{% static 'dsa.jpg' %}" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+                      
+                    
+
+      
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="container my-0">
+        <h2 style="padding-top: 2%; color:#DBA39A">Experience</h2>
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin-left:2%;
+                    margin-top: 2%">
+                        <img src="{% static 'feyn.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Machine Learning Intern at
+                            Feynn Labs <br>Sep-Dec '22</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem; margin-left:2%;
+                        margin-top: 2%">
+                            <img src="{% static 'sk.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Smartknower(Machine Learning)Training+Industrial Projects<br>Dec '21-Mar'22</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    
+
+      
+    </div>
+    </div>
+    </div>
+    <a class="btn btn-social-icon btn-linkedin" style="text-align: center; display:block; padding-top: 2%;" href="https://www.linkedin.com/in/anand-k-s-204981220/">
+        <span class="fa fa-linkedin"></span>
+        <a class="btn btn-social-icon btn-github" style="text-align: center; display:block;" href="https://github.com/anandks055">
+            <span class="fa fa-github"></span>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
